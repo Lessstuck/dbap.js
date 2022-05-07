@@ -1,2 +1,2 @@
 # dbap.js
-Javascript version of DBAP alorithm for use in Max
+JavaScript version of dbap spatialization Max object, controls matrix~

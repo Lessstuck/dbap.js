@@ -1,0 +1,99 @@
+{   "Studio_A": [
+        {
+            "speakerNumber": 1,
+            "position": [0, 3.5, 8.5]
+        },
+        {
+            "speakerNumber": 2,
+            "position": [0, 9.5, 8.5]
+        },   
+        {
+            "speakerNumber": 2,
+            "position": [0, 9.5, 8.5]
+        },
+        {
+            "speakerNumber": 3,
+            "position": [0, 15.5, 8.5]
+        },
+        {
+            "speakerNumber": 4,
+            "position": [0, 3.5, 5]
+        }, 
+        {
+            "speakerNumber": 5,
+            "position": [0, 9.5, 5]
+        }, 
+        {
+            "speakerNumber": 6,
+            "position": [0, 15.5, 5]
+        },
+        {
+            "speakerNumber": 7,
+            "position": [12, 15.5, 8.5]
+        },
+        {
+            "speakerNumber": 8,
+            "position": [12, 9.5, 8.5]
+        },  
+        {
+            "speakerNumber": 9,
+            "position": [12, 3.5, 8.5]
+        }, 
+        {
+            "speakerNumber": 10,
+            "position": [12, 15.5, 5]
+        },
+        {
+            "speakerNumber": 11,
+            "position": [12, 9.5, 5]
+        },
+        {
+            "speakerNumber": 12,
+            "position": [12, 3.5, 5]
+        },
+        {
+            "speakerNumber": 13,
+            "position": [8.5, 20.5, 8.5]
+        },
+        {
+            "speakerNumber": 14,
+            "position": [3.5, 20.5, 8.5]
+        },
+        {
+            "speakerNumber": 15,
+            "position": [2.75, 20.5, 5]
+        },
+        {
+            "speakerNumber": 16,
+            "position": [9.25, 20.5, 5]
+        },
+        {
+            "speakerNumber": 17,
+            "position": [8, 0, 8.5]
+        },
+        {
+            "speakerNumber": 18,
+            "position": [4, 0, 8.5]
+        },
+        {
+            "speakerNumber": 19,
+            "position": [8, 0, 5]
+        },
+        {
+            "speakerNumber": 20,
+            "position": [4, 0, 5]
+        },
+        {
+            "speakerNumber": 21,
+            "position": [6, 15.5, 8.5]
+        },
+        {
+            "speakerNumber": 22,
+            "position": [6, 9.5, 8.5]
+        },
+        {
+            "speakerNumber": 23,
+            "position": [6, 3.5, 8.5]
+        }
+    ]
+}
