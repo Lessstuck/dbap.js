@@ -4,6 +4,7 @@
 var speakerArray = [];
 var studio;
 var sumOfSquares;
+var blurSourceIndex;
 var blurArray = [];
 var blurAll = .001;
 var a = .5; // distance attenuation in free-field
@@ -20,7 +21,6 @@ function loadSpeakers()   {
     studio = d.get("Studio_A");
     for (i = 0; i < studio.length; i++) {
         speakerArray.push(studio[i].get("position"));
-        blurArray[i] = .001;
     }
 };
 
@@ -40,13 +40,8 @@ function showSpeakerArray() {
 }
 
 function blur() {
-    var blurSpeakerIndex = arrayfromargs(arguments)[0] - 1;
-    blurArray[blurSpeakerIndex] = arrayfromargs(arguments)[1] * 20 + .001;  //  naïve scaling?
-}
-
-function blurall() {
-    blurAll = arrayfromargs(arguments)[0];
-    blurAll = blurAll * 20 + .001;  //  naïve scaling?
+    blurSourceIndex = arrayfromargs(arguments)[0] - 1;
+    blurArray[blurSourceIndex] = arrayfromargs(arguments)[1] * 20 + .001;  //  naïve scaling?
 }
 
 function rolloff()  {   // distance attenuation: -6dB in free-field, -3dB in closed room
@@ -74,13 +69,15 @@ function src_position()  {
         distanceArray.push(distanceToSpeaker);
     };
 
+
+
     // calculate sum inside radix
     var bottomSum = 0;
     for (var i = 0; i < speakerArray.length; i = i + 1)   {
-        bottomSum = bottomSum + (2 * a)/(Math.pow(distanceArray[i], 2));    
-    }
+        bottomSum = bottomSum + (2 * a)/(Math.pow(distanceArray[i], 2)); 
+;    }
+   
     k = 1/Math.sqrt(bottomSum);
-    // post(k)
 
     // calculate amplitude at each speaker
     var speakerAmplitudeArray = [];
