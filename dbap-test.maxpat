@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 106.0, 674.0, 651.0 ],
+		"rect" : [ 372.0, 385.0, 674.0, 651.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -486,6 +486,31 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 286.0, 112.909090909090935, 219.375, 22.0 ],
+									"text" : "speakers.csv"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"linecount" : 3,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 292.0, 146.909090909090935, 219.375, 49.0 ],
+									"text" : "\"Macintosh HD:/Users/les/Documents/GitHub/dbap.js/speakers.csv\""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-24",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -712,8 +737,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.75, 108.77272727272728, 124.0, 22.0 ],
-									"text" : "mw.relativetoabsolute"
+									"patching_rect" : [ 39.75, 108.77272727272728, 77.0, 22.0 ],
+									"text" : "absolutepath"
 								}
 
 							}
@@ -1425,8 +1450,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 39.75, 79.636363636363626, 117.0, 22.0 ],
-									"text" : "assets/speakers.csv"
+									"patching_rect" : [ 39.75, 79.636363636363626, 123.0, 22.0 ],
+									"text" : "speakers.csv"
 								}
 
 							}
@@ -1455,6 +1480,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
+									"order" : 1,
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 1 ],
+									"order" : 0,
 									"source" : [ "obj-13", 0 ]
 								}
 
@@ -1526,7 +1560,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 1 ],
+									"order" : 0,
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
+									"order" : 1,
 									"source" : [ "obj-20", 0 ]
 								}
 
@@ -2974,13 +3017,6 @@
 				"bootpath" : "~/Documents/GitHub/dbap.js",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mw.relativetoabsolute.maxpat",
-				"bootpath" : "~/Documents/GitHub/den-laundrianni-max",
-				"patcherrelativepath" : "../den-laundrianni-max",
-				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
