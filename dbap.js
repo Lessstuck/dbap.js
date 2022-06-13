@@ -19,7 +19,7 @@ function loadSpeakers()   {
     var d = new Dict;
 	d.import_json("speakers.json");
     studio = d.get("Studio_A");
-    for (i = 0; i < studio.length; i++) {
+    for (i = 0; i < studio.length - 1; i++) {
         speakerArray.push(studio[i].get("position"));
     }
 };
